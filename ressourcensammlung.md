@@ -9,3 +9,5 @@
 - Deep Learning Book Godfellow
 - Siraj Naval: [Github](https://github.com/llSourcell), [Youtube](https://www.youtube.com/c/sirajology)
 - Backpropagation Slides aus Neuronale Netze VL im Sommer 2016
+- Stanford CS 20SI: [Tensorflow for Deep Learning Research](http://web.stanford.edu/class/cs20si/syllabus.html)
+- Stanford CS231n: [Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/syllabus.html)
