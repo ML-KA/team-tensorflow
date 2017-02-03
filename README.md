@@ -8,11 +8,14 @@ Die Unterteilung der Treffen erfolgt in thematisch trennbare **Sprints**. Jeder 
 ### Sprint 1: Getting in Touch with TensorFlow
 Einarbeitung in Tensorflow mit dem Whitepaper und den online zur Verfügung gestellten Tutorials. 
 
-### Sprint 2: To be defined
-Vorschläge:
+#### MNIST Klassifikation
+- Einfaches Multilayer-Perzeptron (MLP) für die erste Klassifikation
+- MLP mit *Tensorboard* visualisieren
+- Deep MNIST mit einem CNN (Convolutional Neural Network)
 
-- Ein eigenes neuronales Netz trainieren
-- Das Internet nach interessanten Problemen und Implementierungen durchsuchen und diese reproduzieren
+### Sprint 2: Stanford-Kurs - Tensorflow for Deep Learning Research
+
+- Durcharbeiten des Stanford Kurses [Tensorflow for Deep Learning Research](http://web.stanford.edu/class/cs20si/syllabus.html)
 
 #### Änderungen bitte über eure Forks und Pull Requests machen.
 
