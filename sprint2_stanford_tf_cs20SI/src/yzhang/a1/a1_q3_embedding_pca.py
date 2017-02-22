@@ -20,7 +20,7 @@ from tensorflow.contrib.tensorboard.plugins import projector
 # calc word embeddings
 VOCAB_SIZE = 1000
 embed_size = 128
-DIR = 'processed_lsa/'
+graph_dir = 'graph_embedding_pca/'
 def main(args):
     data = __load_data(args.data) #2D matrix
     print(data.shape)
@@ -46,7 +46,7 @@ def main(args):
         sess.run(embedding_var.initializer)
 
         config = projector.ProjectorConfig()
-        summary_writer = tf.summary.FileWriter(DIR)
+        summary_writer = tf.summary.FileWriter(graph_dir)
 
         embedding = config.embeddings.add()
         embedding.tensor_name = embedding_var.name
@@ -55,7 +55,7 @@ def main(args):
 
         projector.visualize_embeddings(summary_writer, config)
         saver_embed = tf.train.Saver([embedding_var])
-        saver_embed.save(sess, DIR + 'model.ckpt', 1)
+        saver_embed.save(sess, graph_dir + 'model.ckpt', 1)
 
 
 

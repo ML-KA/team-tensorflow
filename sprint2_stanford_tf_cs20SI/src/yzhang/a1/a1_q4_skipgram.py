@@ -80,19 +80,23 @@ def train_model(model, batch_gen, num_train_steps, weights_fld):
     initial_step = 0
     #config = tf.ConfigProto()
     #config.graph_options.optimizer_options.global_jit_level = tf.OptimizerOptions.ON_1
-    
+    ckpt_dir = 'checkpoints/'
+    graph_dir = 'graph_skipgram/'
     #with tf.Session(config=config) as sess:
     with tf.Session() as sess:
         tf.global_variables_initializer().run()
 
         # restore latest checkpoint: mapping of variable names to tensors
-        ckpt = tf.train.get_checkpoint_state(os.path.dirname('checkpoints/checkpoint'))
+        
+        if not os.path.exists(ckpt_dir):
+            os.makedirs(ckpt_dir)
+        ckpt = tf.train.get_checkpoint_state(os.path.dirname(ckpt_dir + 'checkpoint'))
         if ckpt and ckpt.model_checkpoint_path :
             saver.restore(sess, ckpt.model_checkpoint_path)
 
 
         total_loss = 0.0
-        writer = tf.summary.FileWriter('improved_graph/lr' + str(model.learning_rate), sess.graph)
+        writer = tf.summary.FileWriter(graph_dir + 'lr' + str(model.learning_rate), sess.graph)
         initial_step = model.global_step.eval()
         for index in xrange(initial_step, initial_step + num_train_steps):
             centers, targets = batch_gen.next()
@@ -103,8 +107,8 @@ def train_model(model, batch_gen, num_train_steps, weights_fld):
             if (index + 1) % SKIP_STEP == 0:
                 print('Average loss at step {}: {:5.1f}'.format(index + 1, total_loss / SKIP_STEP))
                 total_loss = 0.0
-                saver.save(sess, 'checkpoints/skip-gram', global_step=model.global_step)
-        writer.close()
+                saver.save(sess, ckpt_dir + 'skip-gram', global_step=model.global_step)
+        
         '''
         while True:
             input = raw_input('Enter word \n')
@@ -124,7 +128,7 @@ def train_model(model, batch_gen, num_train_steps, weights_fld):
         sess.run(embedding_var.initializer)
 
         config = projector.ProjectorConfig()
-        summary_writer = tf.summary.FileWriter('processed')
+        #summary_writer = tf.summary.FileWriter('processed')
 
         # # add embedding to the config file
         embedding = config.embeddings.add()
@@ -134,9 +138,9 @@ def train_model(model, batch_gen, num_train_steps, weights_fld):
         embedding.metadata_path = 'data/vocab_1000.tsv'
 
         # # saves a configuration file that TensorBoard will read during startup.
-        projector.visualize_embeddings(summary_writer, config)
+        projector.visualize_embeddings(writer, config)
         saver_embed = tf.train.Saver([embedding_var])
-        saver_embed.save(sess, 'processed/model3.ckpt', 1)
+        saver_embed.save(sess, graph_dir + 'model.ckpt', 1)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
