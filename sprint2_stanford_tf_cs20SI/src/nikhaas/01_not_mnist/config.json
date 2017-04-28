@@ -1,0 +1,1 @@
+{"n_epochs": 100, "batch_size": 128, "optimizer": {"gradient_descent": false, "adam": true, "adadelta": false}, "learning_rate": 1}

@@ -1,0 +1,1514 @@
+[
+    {
+        "accuracy": 0.8557,
+        "batch_size": 512,
+        "learning_rate": 0.01,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 2.3620502948760986,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7274,
+        "batch_size": 512,
+        "learning_rate": 0.01,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 2.3875036239624023,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8633,
+        "batch_size": 512,
+        "learning_rate": 0.01,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 2.3075976371765137,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8699,
+        "batch_size": 512,
+        "learning_rate": 0.01,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 9.59281301498413,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8354,
+        "batch_size": 512,
+        "learning_rate": 0.01,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 9.839993000030518,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8597,
+        "batch_size": 512,
+        "learning_rate": 0.01,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 10.001680135726929,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8703,
+        "batch_size": 512,
+        "learning_rate": 0.01,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 18.53532385826111,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8496,
+        "batch_size": 512,
+        "learning_rate": 0.01,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 18.879379272460938,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8572,
+        "batch_size": 512,
+        "learning_rate": 0.01,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 19.43538522720337,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7074,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 1.5451929569244385,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.308,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 1.573110580444336,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7332,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 1.5860142707824707,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7224,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 6.586811542510986,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6648,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 6.650977849960327,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7312,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 6.771644115447998,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7275,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 12.964476823806763,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6867,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 13.024020671844482,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7303,
+        "batch_size": 2048,
+        "learning_rate": 0.01,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 13.137383937835693,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6938,
+        "batch_size": 4096,
+        "learning_rate": 0.01,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 1.383474588394165,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.146,
+        "batch_size": 4096,
+        "learning_rate": 0.01,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 1.387892246246338,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7333,
+        "batch_size": 4096,
+        "learning_rate": 0.01,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 1.4007339477539062,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7156,
+        "batch_size": 4096,
+        "learning_rate": 0.01,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 5.876398324966431,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.5667,
+        "batch_size": 4096,
+        "learning_rate": 0.01,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 5.896735668182373,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7317,
+        "batch_size": 4096,
+        "learning_rate": 0.01,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 5.925350666046143,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7225,
+        "batch_size": 4096,
+        "learning_rate": 0.01,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 11.487504720687866,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6539,
+        "batch_size": 4096,
+        "learning_rate": 0.01,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 11.506858348846436,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7307,
+        "batch_size": 4096,
+        "learning_rate": 0.01,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 11.473498106002808,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8684,
+        "batch_size": 512,
+        "learning_rate": 0.1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 2.3011398315429688,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8412,
+        "batch_size": 512,
+        "learning_rate": 0.1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 2.403942584991455,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8319,
+        "batch_size": 512,
+        "learning_rate": 0.1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 2.3082692623138428,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8726,
+        "batch_size": 512,
+        "learning_rate": 0.1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 9.467273235321045,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.867,
+        "batch_size": 512,
+        "learning_rate": 0.1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 9.636334657669067,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8266,
+        "batch_size": 512,
+        "learning_rate": 0.1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 9.934078454971313,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8719,
+        "batch_size": 512,
+        "learning_rate": 0.1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 19.064228773117065,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8698,
+        "batch_size": 512,
+        "learning_rate": 0.1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 19.142271041870117,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8336,
+        "batch_size": 512,
+        "learning_rate": 0.1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 19.32570719718933,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7272,
+        "batch_size": 2048,
+        "learning_rate": 0.1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 1.561708927154541,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6764,
+        "batch_size": 2048,
+        "learning_rate": 0.1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 1.60880446434021,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6718,
+        "batch_size": 2048,
+        "learning_rate": 0.1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 1.6023375988006592,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7329,
+        "batch_size": 2048,
+        "learning_rate": 0.1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 6.7271435260772705,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7171,
+        "batch_size": 2048,
+        "learning_rate": 0.1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 6.691326379776001,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7133,
+        "batch_size": 2048,
+        "learning_rate": 0.1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 6.672136068344116,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7339,
+        "batch_size": 2048,
+        "learning_rate": 0.1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 12.920445680618286,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.727,
+        "batch_size": 2048,
+        "learning_rate": 0.1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 13.051508903503418,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6874,
+        "batch_size": 2048,
+        "learning_rate": 0.1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 13.10904836654663,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7216,
+        "batch_size": 4096,
+        "learning_rate": 0.1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 1.3838200569152832,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6419,
+        "batch_size": 4096,
+        "learning_rate": 0.1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 1.3883519172668457,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6983,
+        "batch_size": 4096,
+        "learning_rate": 0.1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 1.4011595249176025,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7322,
+        "batch_size": 4096,
+        "learning_rate": 0.1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 5.8316028118133545,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7002,
+        "batch_size": 4096,
+        "learning_rate": 0.1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 5.929983615875244,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.681,
+        "batch_size": 4096,
+        "learning_rate": 0.1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 5.847471475601196,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7339,
+        "batch_size": 4096,
+        "learning_rate": 0.1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 11.423985004425049,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7191,
+        "batch_size": 4096,
+        "learning_rate": 0.1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 11.439028024673462,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.5952,
+        "batch_size": 4096,
+        "learning_rate": 0.1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 11.528560638427734,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8339,
+        "batch_size": 512,
+        "learning_rate": 1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 2.2209603786468506,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8685,
+        "batch_size": 512,
+        "learning_rate": 1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 2.2495827674865723,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8189,
+        "batch_size": 512,
+        "learning_rate": 1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 2.3005056381225586,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8281,
+        "batch_size": 512,
+        "learning_rate": 1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 9.437118768692017,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8728,
+        "batch_size": 512,
+        "learning_rate": 1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 9.614635229110718,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8264,
+        "batch_size": 512,
+        "learning_rate": 1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 9.700490951538086,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8309,
+        "batch_size": 512,
+        "learning_rate": 1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 18.454907417297363,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8732,
+        "batch_size": 512,
+        "learning_rate": 1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 18.944617748260498,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8124,
+        "batch_size": 512,
+        "learning_rate": 1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 20.260030031204224,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6144,
+        "batch_size": 2048,
+        "learning_rate": 1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 1.6305153369903564,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7205,
+        "batch_size": 2048,
+        "learning_rate": 1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 1.653508186340332,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6795,
+        "batch_size": 2048,
+        "learning_rate": 1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 1.5684692859649658,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6711,
+        "batch_size": 2048,
+        "learning_rate": 1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 6.70680046081543,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7325,
+        "batch_size": 2048,
+        "learning_rate": 1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 6.709184885025024,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6474,
+        "batch_size": 2048,
+        "learning_rate": 1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 6.699495077133179,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7284,
+        "batch_size": 2048,
+        "learning_rate": 1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 13.072350263595581,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7347,
+        "batch_size": 2048,
+        "learning_rate": 1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 13.174768209457397,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7111,
+        "batch_size": 2048,
+        "learning_rate": 1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 13.385866165161133,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6787,
+        "batch_size": 4096,
+        "learning_rate": 1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 1.4724831581115723,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7093,
+        "batch_size": 4096,
+        "learning_rate": 1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 1.4253349304199219,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.5957,
+        "batch_size": 4096,
+        "learning_rate": 1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 1.455599069595337,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6964,
+        "batch_size": 4096,
+        "learning_rate": 1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 6.0537214279174805,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.7311,
+        "batch_size": 4096,
+        "learning_rate": 1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 6.080059289932251,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6961,
+        "batch_size": 4096,
+        "learning_rate": 1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 6.067317485809326,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6805,
+        "batch_size": 4096,
+        "learning_rate": 1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 11.711806297302246,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.734,
+        "batch_size": 4096,
+        "learning_rate": 1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 11.795318126678467,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.6983,
+        "batch_size": 4096,
+        "learning_rate": 1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 11.769689083099365,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8896,
+        "batch_size": 128,
+        "learning_rate": 0.01,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 5.429121971130371,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8412,
+        "batch_size": 128,
+        "learning_rate": 0.01,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 5.703385829925537,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8777,
+        "batch_size": 128,
+        "learning_rate": 0.01,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 5.82319712638855,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8953,
+        "batch_size": 128,
+        "learning_rate": 0.01,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 22.195132970809937,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8756,
+        "batch_size": 128,
+        "learning_rate": 0.01,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 22.891566038131714,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8757,
+        "batch_size": 128,
+        "learning_rate": 0.01,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 23.205544233322144,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8956,
+        "batch_size": 128,
+        "learning_rate": 0.01,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 42.940919160842896,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8838,
+        "batch_size": 128,
+        "learning_rate": 0.01,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 43.86935043334961,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8693,
+        "batch_size": 128,
+        "learning_rate": 0.01,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 46.213146924972534,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8924,
+        "batch_size": 128,
+        "learning_rate": 0.1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 5.5287086963653564,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8829,
+        "batch_size": 128,
+        "learning_rate": 0.1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 5.690977573394775,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8481,
+        "batch_size": 128,
+        "learning_rate": 0.1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 6.114190578460693,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8921,
+        "batch_size": 128,
+        "learning_rate": 0.1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 23.027503728866577,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8926,
+        "batch_size": 128,
+        "learning_rate": 0.1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 24.309035301208496,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8472,
+        "batch_size": 128,
+        "learning_rate": 0.1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 23.672452926635742,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8917,
+        "batch_size": 128,
+        "learning_rate": 0.1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 42.68628239631653,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8942,
+        "batch_size": 128,
+        "learning_rate": 0.1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 44.41773724555969,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8386,
+        "batch_size": 128,
+        "learning_rate": 0.1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 46.40747809410095,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8492,
+        "batch_size": 128,
+        "learning_rate": 1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 5.774227619171143,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8934,
+        "batch_size": 128,
+        "learning_rate": 1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 5.931757688522339,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8249,
+        "batch_size": 128,
+        "learning_rate": 1,
+        "n_epochs": 10,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 5.966211318969727,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8549,
+        "batch_size": 128,
+        "learning_rate": 1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 23.386922597885132,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8948,
+        "batch_size": 128,
+        "learning_rate": 1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 24.179267644882202,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8412,
+        "batch_size": 128,
+        "learning_rate": 1,
+        "n_epochs": 50,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 23.68363308906555,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8538,
+        "batch_size": 128,
+        "learning_rate": 1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": false,
+            "gradient_descent": true
+        },
+        "test_samples": 10000,
+        "time": 43.984177350997925,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8944,
+        "batch_size": 128,
+        "learning_rate": 1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": true,
+            "adam": false,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 44.82679772377014,
+        "train_samples": 55000
+    },
+    {
+        "accuracy": 0.8304,
+        "batch_size": 128,
+        "learning_rate": 1,
+        "n_epochs": 100,
+        "optimizer": {
+            "adadelta": false,
+            "adam": true,
+            "gradient_descent": false
+        },
+        "test_samples": 10000,
+        "time": 46.809919357299805,
+        "train_samples": 55000
+    }
+]
