@@ -2,7 +2,7 @@
 
 ## Sources
 
--	[Structuring Your TensorFlow Models by Danijar Hafner](danijar.com/structuring-your-tensorflow-models/)
+-	[Structuring Your TensorFlow Models by Danijar Hafner](http://danijar.com/structuring-your-tensorflow-models/)
 -	[Official TensorFlow (non-deep) MNIST Tutorial](https://www.tensorflow.org/get_started/mnist/beginners)
 
 ## Directory Structure of the Tutorial
@@ -34,7 +34,7 @@ Extend these models with export functionality.
     - `do_eval`: Runs one evaluation against the full epoch of data
 2. `main`: Parse arguments: max no of steps (or no of epochs), input data dir, batch size, learning rate...
 3. `run_training`: First, builds the computational graph by invoking
-    a) `mnist.inference`: forward pass through the network (hidden1, hidden2, softmax)
+    - `mnist.inference`: forward pass through the network (hidden1, hidden2, softmax)
     - `mnist.loss`: adds the operation for calculating the loss (cross entropy in this case)
     - `mnist.training`: add the optimizer (e.g. GradientDescent), track the global step (set this variable as not trainable) and create a summary export (see the [summary generation guide](https://www.tensorflow.org/api_guides/python/summary#Generation_of_Summaries))
     - `mnist.evaluations`: Check, whether the targets are correctly predicted with the [in_top_k (with k=1)](https://www.tensorflow.org/api_docs/python/tf/nn/in_top_k) function
@@ -65,7 +65,7 @@ Extend these models with export functionality.
 - summaries are also defined in the model
 - The computational graph is assembled in the **run_training** method (does not seem optimal), maybe one should package it in another method
 - Not all values are exported
-- Usage of **decorators** for namescopes and summaries would be nice (e.g. see [Danijar Hafners Blog Post    ](danijar.com/structuring-your-tensorflow-models/))
+- Usage of **decorators** for namescopes and summaries would be nice (e.g. see [Danijar Hafners Blog Post    ](http://danijar.com/structuring-your-tensorflow-models/))
 - About the **computational graph**: In order to be properly trained, it is enough to do a `sess.run()` with the **sinks of the computational graph**. However, intermediate results can not be saved during execution and printed out for informational purposes. The export of intermediate results via **tf.summary()** is not effected, because it is also an operation in the computational graph. In consequence, **it might sometimes be necessary to apply a sess.run() on some operations individually**. An example:
     -  `sess.run([train_op], feed_dict=feed_dict)` works perfectly fine to train the model. The statement of `train_op` after following the code path is `train_op = optimizer.minimize(loss, global_step=global_step)`, which has the return value ([taken from here](https://www.tensorflow.org/versions/r0.11/api_docs/python/train/optimizers#Optimizer.minimize))
     > An Operation that updates the variables in var_list. If global_step was not None, that operation also increments global_step  
@@ -80,6 +80,7 @@ Extend these models with export functionality.
 - Develop the `mnist.py` module to a general `multilayer-perceptron` module
     - Pass a list of hidden layers
     - pass a list of activation functions
+- The precision is not reported, only the (cross-entropy) **loss**. The loss is not in [0,1]. Evaluation is done only with the `do_eval` method
 
 ### Lessons Learned
 
@@ -95,37 +96,26 @@ Structure the methods like the following:
     - `assemble graph`: assemble the graph with the methods from the model module
     - `training`: a foor loop with training steps
     - `create_checkpoints`: to create checkpoints and summaries periodically
-
-To train a neural network in tensorflow, one needs to
-
--	build the **computational graph**
--	provide operations for **training, evaluation and inference**
-
-Moreover, in order to investigate and reuse the results, one needs to
-
--	export intermediate results
--	make extensive use of the **tensorboard**
--	parametrize the models for easy reusabililty
-
-According to [Danjar Hafner](danijar.com/structuring-your-tensorflow-models/), most engineers define the compute graph in a single function. This does not support reusability. According to him, *Just splitting the code into functions doesn’t work, since every time the functions are called, the graph would be extended by new code. Therefore, we have to ensure that the operations are added to the graph only when the function is called for the first time. This is basically lazy-loading.* He achieves this with the use of *decorators*.
-
-## The Main Function
-
-The [argparse module](https://docs.python.org/2/library/argparse.html) is used to pass arguments to the command line.[`FLAGS, unparsed = parse_known_args`](https://docs.python.org/3.4/library/argparse.html#partial-parsing) can be used to parse the provided arguments only partially. This can be useful if the unneeded arguments in `unparsed` are passed to another program inside the current one.
-
-## Executing the Graph in a Session
-
-As stated in the [documentation](https://www.tensorflow.org/versions/r0.10/get_started/basic_usage#interactive_usage), the `InteractiveSession` class is provided for ease of use in interactive environments such as `IPython`. Therefore, I consider it not to be good coding style to use it in a module. Instead, one should use [`sess.run`](https://www.tensorflow.org/api_docs/python/tf/Session#run) to execute the calculations.
+4. Define one directory for every model in the common `logdir`. Tensorboard can handle the distributed checkpoints, as long as the parent directory is specified as `--logdir`
+5. **The Main Function:** The [argparse module](https://docs.python.org/2/library/argparse.html) is used to pass arguments to the command line.[`FLAGS, unparsed = parse_known_args`](https://docs.python.org/3.4/library/argparse.html#partial-parsing) can be used to parse the provided arguments only partially. This can be useful if the unneeded arguments in `unparsed` are passed to another program inside the current one.
+6. As stated in the [documentation](https://www.tensorflow.org/versions/r0.10/get_started/basic_usage#interactive_usage), the `InteractiveSession` class is provided for ease of use in interactive environments such as `IPython`. Therefore, I consider it not to be good coding style to use it in a module. Instead, one should use [`sess.run`](https://www.tensorflow.org/api_docs/python/tf/Session#run) to execute the functions.
 
 ## Visualization and Interpretation
 
 One should make extensive use of summary exports and the [embedding](https://www.tensorflow.org/get_started/embedding_viz). But keep disk space consumption in mind.
 
-[Visualizing MNIST](http://colah.github.io/posts/2014-10-Visualizing-MNIST/)
+[Visualizing MNIST Source](http://colah.github.io/posts/2014-10-Visualizing-MNIST/)
+
+Or, [following the original tutorial](https://www.tensorflow.org/get_started/embedding_viz):
+>If you have images associated with your embeddings, you will need to produce a single image consisting of small thumbnails of each data point. This is known as the sprite image. The sprite should have the same number of rows and columns with thumbnails stored in row-first order: the first data point placed in the top left and the last data point in the bottom right:
 
 ## Next Week
 
 Proposals:
-- [word2vec](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/tutorials/word2vec)
-- [deepdream](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/tutorials/deepdream) (is a Jupyter Notebook)
-- [Examples by Aymeric Damien](https://github.com/aymericdamien/TensorFlow-Examples/tree/master/examples)
+- ~~[word2vec](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/tutorials/word2vec)~~
+- ~~[deepdream](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/tutorials/deepdream) (is a Jupyter Notebook)~~
+- ~~[Examples by Aymeric Damien](https://github.com/aymericdamien/TensorFlow-Examples/tree/master/examples)~~
+- Deep MNIST: [Tutorial](https://www.tensorflow.org/get_started/mnist/pros), [Source Code](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/mnist/mnist_deep.py)
+- AlexNet: [AlexNet_v2 tensorflow/models slim implementation](https://github.com/tensorflow/models/blob/master/slim/nets/alexnet.py), [Paper](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks)
+- [A great and short guide to CNNs](https://adeshpande3.github.io/adeshpande3.github.io/A-Beginner's-Guide-To-Understanding-Convolutional-Neural-Networks/)
+- [Proposal: Paper list for upcoming Models](https://adeshpande3.github.io/adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html)

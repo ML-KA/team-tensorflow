@@ -28,7 +28,7 @@ from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 
 from tensorflow.examples.tutorials.mnist import input_data
-from tensorflow.examples.tutorials.mnist import mnist
+import mnist
 
 # Basic model parameters as external flags.
 FLAGS = None
@@ -128,7 +128,8 @@ def run_training():
         # Build a Graph that computes predictions from the inference model.
         logits = mnist.inference(images_placeholder,
                                  FLAGS.hidden1,
-                                 FLAGS.hidden2)
+                                 FLAGS.hidden2,
+                                 tf.nn.relu)
 
         # Add to the Graph the Ops for loss calculation.
         loss = mnist.loss(logits, labels_placeholder)

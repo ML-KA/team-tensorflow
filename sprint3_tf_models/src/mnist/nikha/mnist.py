@@ -42,7 +42,7 @@ IMAGE_SIZE = 28
 IMAGE_PIXELS = IMAGE_SIZE * IMAGE_SIZE
 
 
-def inference(images, hidden1_units, hidden2_units):
+def inference(images, hidden1_units, hidden2_units, activation_func):
     """Build the MNIST model up to where it may be used for inference.
   
     Args:
@@ -61,8 +61,14 @@ def inference(images, hidden1_units, hidden2_units):
             name='weights')
         biases = tf.Variable(tf.zeros([hidden1_units]),
                              name='biases')
-        hidden1 = tf.nn.relu(tf.matmul(images, weights) + biases)
-        # tf.summary.histogram('hidden1', hidden1) # why does this not work?
+        hidden1 = activation_func(tf.matmul(images, weights) + biases)
+        # Export summaries
+        tf.summary.histogram('weights', weights)
+        tf.summary.histogram('biases', biases)
+        tf.summary.histogram('activations', hidden1)
+        # Export some raw images together with the activations after the first layer. Reshape is hardcoded!
+        # tf.summary.image('raw', tf.reshape(images, (images.get_shape().as_list()[0], 28, 28, 1)), 100)
+        # tf.summary.image('activation', tf.reshape(hidden1, (images.get_shape().as_list()[0],28,28,1)), 100)
     # Hidden 2
     with tf.name_scope('hidden2'):
         weights = tf.Variable(
@@ -71,7 +77,11 @@ def inference(images, hidden1_units, hidden2_units):
             name='weights')
         biases = tf.Variable(tf.zeros([hidden2_units]),
                              name='biases')
-        hidden2 = tf.nn.relu(tf.matmul(hidden1, weights) + biases)
+        hidden2 = activation_func(tf.matmul(hidden1, weights) + biases)
+        # Export summaries
+        tf.summary.histogram('weights', weights)
+        tf.summary.histogram('biases', biases)
+        tf.summary.histogram('activations', hidden2)
     # Linear
     with tf.name_scope('softmax_linear'):
         weights = tf.Variable(
@@ -81,6 +91,10 @@ def inference(images, hidden1_units, hidden2_units):
         biases = tf.Variable(tf.zeros([NUM_CLASSES]),
                              name='biases')
         logits = tf.matmul(hidden2, weights) + biases
+        # Export summaries
+        tf.summary.histogram('weights', weights)
+        tf.summary.histogram('biases', biases)
+        tf.summary.histogram('logits', logits)
     return logits
 
 
@@ -123,7 +137,6 @@ def training(loss, learning_rate):
     optimizer = tf.train.GradientDescentOptimizer(learning_rate)
     # Create a variable to track the global step.
     global_step = tf.Variable(0, name='global_step', trainable=False)
-    tf.summary.scalar('global_step', global_step)
     # Use the optimizer to apply the gradients that minimize the loss
     # (and also increment the global step counter) as a single training step.
     train_op = optimizer.minimize(loss, global_step=global_step)
