@@ -1,0 +1,3 @@
+[submodule "sprint3_tf_models/src/mnist/fabianboth"]
+	path = sprint3_tf_models/src/mnist/fabianboth
+	url = https://github.com/fabianboth/tensorflow_tutorial.git
