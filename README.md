@@ -1,6 +1,8 @@
 # team-tensorflow
 
+
 Repository of the [ML-KA](http://ml-ka.de/) Subgroup Team TensorFlow.
+
 
 ## Abstract
 
@@ -30,3 +32,4 @@ by **code inspection and discussion of already existing models.** Moreover, we d
     - ResNet
     - Generative Adversarial Network
 - Future tracks deal with **Recurrent Nets** and **Reinforcement Learning**
+
