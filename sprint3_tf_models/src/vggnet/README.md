@@ -40,3 +40,8 @@ https://github.com/ML-KA/team-tensorflow
 - We deal with Google LeNet
 - Checkout an [Inception Checkpoint](https://github.com/tensorflow/models/tree/master/slim#pre-trained-models) and use it to infer some images, e.g. on a subset of the images they have been trained on, what is the [ILSVRC-2012-CLS image classification data set](www.image-net.org/challenges/LSVRC/2012/)
 - Or use it on whatever dataset you like
+
+# Resources
+
+- [AN overview about gradient descent optimizers by S. Ruder](http://sebastianruder.com/optimizing-gradient-descent/)
+- [A video about the evolution of gradient descent optimizers by S. Raval](https://youtu.be/nhqo0u1a6fw)
